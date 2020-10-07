@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    .wrap{
+        border: 1px solid #999;
+        background-color: #eee;
+        margin:20px;
+    }
+    .container{
+        padding: 0 120px 0 200px;
+        overflow: hidden;
+    }
+    /* .clearfix::after{
+        content:"";
+        clear:both;
+    } */
+    .left{
+        width:200px;  
+        margin-left: -100%;
+        left:-200px;
+        background-color: green;
+
+    }
+    .right{
+        margin-left:-120px ;
+        right:-120px;
+        width:120px;
+        background-color: blue;
+    }
+    .left,.main,.right{
+        float:left;
+        position: relative;
+        min-height:200px;
+    }
+    .main{
+width:100%;
+background-color: red;
+
+
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="container clearfix">
+        <div class="main">
+            <p>这是介绍</p>
+            <p>这是介绍</p>
+            <p>这是介绍</p>
+            <p>这是介绍</p>
+          </div>
+        <div class="left">
+          <p>划水团队</p>
+          <img src="001.jpg" width="80px" height="80px" alt="" />
+        </div>
+        
+        <div class="right">
+          <img src="001.jpg" alt="error" />
+          <img src="001.jpg" alt="error" />
+          <img src="001.jpg" alt="error" />
+          <img src="001.jpg" alt="error" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
